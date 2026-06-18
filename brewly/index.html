@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brewly Coffee App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Welcome Screen -->
+    <div class="screen active" id="welcome">
+        <div class="circle">☕</div>
+        <h1>BREWLY</h1>
+        <p>Fresh coffee delivered to your door</p>
+        <button onclick="showScreen('signup')">Get Started</button>
+    </div>
+
+    <!-- Signup Screen -->
+    <div class="screen" id="signup">
+        <h2>Create Account</h2>
+        <p>Fill in your details to get started</p>
+
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="hello@example.com">
+        <input type="password" placeholder="Password">
+
+        <button onclick="showScreen('success')">Sign Up</button>
+
+        <small>Already have an account? Log In</small>
+    </div>
+
+    <!-- Success Screen -->
+    <div class="screen" id="success">
+        <div class="circle">✓</div>
+        <h2>Account Created!</h2>
+        <p>Welcome to Brewly ☕<br>Your first cup awaits you.</p>
+        <button onclick="showScreen('welcome')">Start Ordering</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
